@@ -1,3 +1,6 @@
 [submodule "finsavior-front"]
 	path = finsavior-front
 	url = https://github.com/Hachibitz/finsavior-front.git
+[submodule "finsavior-back"]
+	path = finsavior-back
+	url = https://github.com/Hachibitz/finsavior-back.git
