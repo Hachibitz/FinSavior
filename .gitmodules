@@ -4,3 +4,6 @@
 [submodule "finsavior-back"]
 	path = finsavior-back
 	url = https://github.com/Hachibitz/finsavior-back.git
+[submodule "grpc-finsavior-services"]
+	path = grpc-finsavior-services
+	url = https://github.com/Hachibitz/grpc-finsavior-services.git
