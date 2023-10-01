@@ -7,3 +7,6 @@
 [submodule "grpc-finsavior-services"]
 	path = grpc-finsavior-services
 	url = https://github.com/Hachibitz/grpc-finsavior-services.git
+[submodule "finsavior-events-processor"]
+	path = finsavior-events-processor
+	url = https://github.com/Hachibitz/finsavior-events-processor.git
