@@ -12,15 +12,6 @@ O projeto está dividido em duas partes:
 
 - [EventsProcessor](https://github.com/Hachibitz/finsavior-events-processor): Contém o código-fonte do consumidor da fila kafka de serviços que utilizam o recurso, desenvolvido com Spring Boot/Schema Registry/Kafka. Consulte o README do EventsProcessor para obter instruções sobre como configurar e executar localmente.
 
-## Funcionalidades/Metas a atingir
-
-- Registro de receitas e despesas
-- Categorização de transações financeiras
-- Acompanhamento do saldo atual
-- Definição de metas financeiras
-- Geração de relatórios e gráficos
-- Autenticação e autorização de usuários
-
 ## Pré-requisitos
 
 Certifique-se de ter os seguintes requisitos antes de começar:
