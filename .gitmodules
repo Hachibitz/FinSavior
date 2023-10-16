@@ -10,3 +10,6 @@
 [submodule "finsavior-events-processor"]
 	path = finsavior-events-processor
 	url = https://github.com/Hachibitz/finsavior-events-processor.git
+[submodule "finsavior-config-server"]
+	path = finsavior-config-server
+	url = https://github.com/Hachibitz/finsavior-config-server.git
