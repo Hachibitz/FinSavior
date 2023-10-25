@@ -13,3 +13,6 @@
 [submodule "finsavior-config-server"]
 	path = finsavior-config-server
 	url = https://github.com/Hachibitz/finsavior-config-server.git
+[submodule "finsavior-cloud-properties"]
+	path = finsavior-cloud-properties
+	url = https://github.com/Hachibitz/finsavior-cloud-properties.git
