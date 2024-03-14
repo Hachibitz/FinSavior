@@ -1,8 +1,8 @@
 # FinSavior
 
-FinSavior é uma aplicação de organização financeira desenvolvida com Angular, Spring Boot, Grpc, Protobuf, Kafka, Schema Registry, etc. Ela permite aos usuários registrar suas receitas, despesas e metas financeiras, fornecendo uma visão clara e detalhada de suas finanças pessoais.
+FinSavior é uma aplicação de organização financeira com insights e assistente de inteligência artifical (AI) powered by OpenAI, vai ser seu conselheiro no mundo financeiro, se aprimorando continuamente pra te ajudar com suas finanças. Desenvolvida com Angular, Spring Boot, Grpc, Protobuf, Kafka, Schema Registry, etc. Ela permite aos usuários registrar suas receitas, despesas e metas financeiras, fornecendo uma visão clara e detalhada de suas finanças pessoais.
 
-O projeto está dividido em duas partes:
+O projeto está dividido em várias partes:
 
 - [Frontend](https://github.com/Hachibitz/finsavior-front): Contém o código-fonte do frontend da aplicação, desenvolvido com Angular 16 e Node 18. Consulte o README do frontend para obter instruções sobre como configurar e executar o frontend localmente.
 
@@ -12,44 +12,7 @@ O projeto está dividido em duas partes:
 
 - [EventsProcessor](https://github.com/Hachibitz/finsavior-events-processor): Contém o código-fonte do consumidor da fila kafka de serviços que utilizam o recurso, desenvolvido com Spring Boot/Schema Registry/Kafka. Consulte o README do EventsProcessor para obter instruções sobre como configurar e executar localmente.
 
-## Pré-requisitos
-
-Certifique-se de ter os seguintes requisitos antes de começar:
-
-- Node.js 18 ou superior
-- Java JDK 8 ou superior
-- Maven
-- Banco de dados SQL
-- Kafka/SchemaRegistry
-
-## Instalação e Execução
-
-Siga as instruções abaixo para configurar e executar o projeto FinSavior:
-
-1. Clone este repositório:
-
-shell
-git clone https://github.com/Hachibitz/FinSavior.git
-
-2. Configuração do Backend
-
-Consulte o [README do backend](https://github.com/Hachibitz/finsavior-back#readme) para obter instruções sobre como configurar e iniciar o servidor.
-
-3. Configuração do Frontend
-
-Consulte o [README do frontend](https://github.com/Hachibitz/finsavior-front#readme) para obter instruções sobre como configurar e executar o frontend localmente.
-
-## Contribuição
-
-Contribuições são bem-vindas! Se você quiser contribuir com o projeto, siga as etapas abaixo:
-
-1. Fork o projeto
-2. Crie sua branch de recurso (`git checkout -b feature/MyFeature`)
-3. Commit suas alterações (`git commit -am 'Add some feature'`)
-4. Push para a branch (`git push origin feature/MyFeature`)
-5. Abra um Pull Request
-
-## Contato
+- [ConfigServer](https://github.com/Hachibitz/finsavior-config-server): Responsável pela busca de properties do servidor de cada ambiente na cloud.
 
 Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
 
