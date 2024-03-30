@@ -70,9 +70,64 @@ services:
       - 9000:9000
     environment:
       KAFKA_BROKERCONNECT: broker:29092
+  
+  finsavior-configserver:
+    image: finsavior-configserver:latest
+    hostname: finsavior-configserver
+    container_name: finsavior-configserver
+    ports:
+      - 8084:8084
+    environment:
+      TOKEN: {yourtoken}
+      
+  finsavior-back:
+    image: finsavior-back:latest
+    container_name: finsavior-back
+    depends_on:
+      - finsavior-configserver
+    ports:
+      - 8085:8085
+    environment:
+      ai-api-key: {youraiapikey}
+      app.jwtSecret: {yoursecret}
+      app.jwtExpirationMs: 86400000
+      app.jwtExpirationMsForRememberMe: 2592000000
+      finsavior-datasource-env-address: jdbc:sqlserver://host.docker.internal:1433;databaseName={yourdbname}
+      spring.datasource.password: {dbpassword}
+      spring.datasource.username: {dbusername}
+      finsavior-configserver-url: http://finsavior-configserver:8084
+      table-service-grpc-host: table-service-grpc
+      user-service-grpc-host: user-service-grpc
+      security-service-grpc-host: security-service-grpc
 
+  table-service-grpc:
+    image: table-service-grpc:latest
+    container_name: table-service-grpc
+    ports:
+      - 6565:6565
+    environment:
+      ai-api-key: {youraiapikey}
+      finsavior-datasource-env-address: jdbc:sqlserver://host.docker.internal:1433;databaseName={yourdbname}
+      spring.datasource.password: {dbpassword}
+      spring.datasource.username: {dbusername}
 
-
-
-
+  security-service-grpc:
+    image: security-service-grpc:latest
+    container_name: security-service-grpc
+    ports:
+      - 6567:6567
+    environment:
+      finsavior-datasource-env-address: jdbc:sqlserver://host.docker.internal:1433;databaseName={yourdbname}
+      spring.datasource.password: {dbpassword}
+      spring.datasource.username: {dbusername}
+      
+  user-service-grpc:
+    image: user-service-grpc:latest
+    container_name: user-service-grpc
+    ports:
+      - 6566:6566
+    environment:
+      finsavior-datasource-env-address: jdbc:sqlserver://host.docker.internal:1433;databaseName={yourdbname}
+      spring.datasource.password: {dbpassword}
+      spring.datasource.username: {dbusername}
 
