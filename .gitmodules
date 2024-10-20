@@ -16,3 +16,6 @@
 [submodule "finsavior-cloud-properties"]
 	path = finsavior-cloud-properties
 	url = https://github.com/Hachibitz/finsavior-cloud-properties.git
+[submodule "finsavior-mobile-front"]
+	path = finsavior-mobile-front
+	url = https://github.com/Hachibitz/finsavior-mobile-front.git
