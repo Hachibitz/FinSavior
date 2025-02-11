@@ -4,7 +4,9 @@ FinSavior é uma aplicação de organização financeira com insights e assisten
 
 O projeto está dividido em várias partes:
 
-- [Frontend](https://github.com/Hachibitz/finsavior-front): Contém o código-fonte do frontend da aplicação, desenvolvido com Angular 16 e Node 18. Consulte o README do frontend para obter instruções sobre como configurar e executar o frontend localmente.
+- [Frontend-LEGADO](https://github.com/Hachibitz/finsavior-mobile-front): Contém o código-fonte do frontend da aplicação, desenvolvido com Angular 16 e Node 18. Consulte o README do frontend para obter instruções sobre como configurar e executar o frontend localmente.
+
+- [Frontend-APP](https://github.com/Hachibitz/finsavior-mobile-front): Contém o código-fonte do frontend da aplicação, desenvolvido com Angular 16 e Node 18. Consulte o README do frontend para obter instruções sobre como configurar e executar o frontend localmente.
 
 - [Backend](https://github.com/Hachibitz/finsavior-back): Contém o código-fonte do backend da aplicação, desenvolvido com Spring Boot. Consulte o README do backend para obter instruções sobre como configurar e executar o backend localmente.
 
